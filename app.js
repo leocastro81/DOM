@@ -16,15 +16,15 @@ form.addEventListener('submit', function(event){
 
     tareasLista.appendChild(nuevaTareaLi);
 
-    document.getElementById('tarea').value = ' ';
+    document.getElementById('tarea').value = '';
 
     eliminarCompletadas.addEventListener('click', function(){
         const tareasCompletadas = document.querySelectorAll('completadas')
     
         tareasCompletadas.forEach(function(tareaCompletada){
             tareaCompletada.remove();
-        })
-    })
+        });
+    });
 
 })
 
